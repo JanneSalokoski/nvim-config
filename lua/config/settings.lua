@@ -8,6 +8,11 @@ vim.o.sw = 4
 vim.o.ts = 4
 vim.o.et = true
 
+-- Colorcolumn
+vim.o.cc = "80"
+vim.o.wrap = true
+vim.o.tw = 80
+
 -- Whitespace
 vim.opt.list = true
 vim.opt.listchars = { trail = '█', space = " ", tab = "  " }
@@ -18,6 +23,9 @@ vim.wo.relativenumber = true
 
 -- Linebreaks
 vim.o.linebreak = true
+
+-- Scroll-off
+vim.o.so = 10
 
 -- Folding.
 vim.o.foldcolumn = '0'
@@ -35,7 +43,7 @@ vim.opt.fillchars = {
 }
 
 -- Sync clipboard between the OS and Neovim.
-vim.o.clipboard = 'unnamedplus'
+-- vim.o.clipboard = 'unnamedplus'
 
 -- Save undo history.
 vim.o.undofile = true
