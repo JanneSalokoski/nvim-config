@@ -50,6 +50,16 @@ return {
             "<cmd>:bnext<cr>",
             desc = "Next buffer"
         },
+        {
+            "<leader>L",
+            "<cmd>:Lazy<cr>",
+            desc = "Lazy"
+        },
+        {
+            "<Esc>",
+            "<cmd>:noh<cr>",
+            desc = "Clear selection"
+        }
     },
     config = function()
         local wk = require("which-key")
