@@ -27,9 +27,12 @@ return {
             ["<C-space>"] = { "show_documentation", "hide_documentation" },
             ["<C-k>"] = { "scroll_documentation_up", "fallback" },
             ["<C-j>"] = { "scroll_documentation_down", "fallback" },
-            cmdline = {
+        },
+        cmdline = {
+            keymap = {
                 ["<CR>"] = { "fallback" },
             },
+            sources = { "path" },
         },
         completion = {
             keyword = {
@@ -79,7 +82,6 @@ return {
         snippets = { preset = "luasnip" },
         sources = {
             default = { "lsp", "path", "snippets", "ripgrep", "buffer" },
-            cmdline = { "path" },
             providers = {
                 ripgrep = {
                     module = "blink-ripgrep",
